@@ -30,3 +30,5 @@ const events = [
         date: "2023-06-01"
     }
 ];
+
+export { events }
