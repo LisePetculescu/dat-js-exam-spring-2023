@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Environment 04</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environment 04</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <body>
+        <header>
+            <h1>Environment 04</h1>
+        </header>
+        <main>
+            <h2>Events</h2>
+            <ul id="events-list">
+                <!-- <li>event.date - event.title: event.description</li> -->
+            </ul>
 
-<body>
-    <header>
-        <h1>Environment 04</h1>
-    </header>
-    <main>
-        <h2>Events</h2>
-        <ul id="events-list"></ul>
-        <form id="create-event-form">
-            <label for="title">Title</label>
-            <input type="text" id="title" name="title" placeholder="Title of event">
-            <label for="description">Description</label>
-            <input type="text" id="description" name="description" placeholder="Description of event">
-            <label for="date">Date</label>
-            <input type="date" id="date" name="date" placeholder="Date of event">
-            <button>Create Event</button>
-        </form>
-    </main>
-    <script src="script.js"></script>
-</body>
-
+            <form id="create-event-form">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Title of event" />
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" placeholder="Description of event" />
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" placeholder="Date of event" />
+                <button>Create Event</button>
+            </form>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>

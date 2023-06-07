@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Environment 05</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Environment 05</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-  <body>
-    <header>
-      <h1>Environment 05</h1>
-    </header>
-    <main>
-      <h2>Washing machine</h2>
-      <form id="washing-machine-form">
-        <label for="title">Temperature</label>
-        <select id="temperature" name="temperature">
-          <option value="30">30°C</option>
-          <option value="40">40°C</option>
-          <option value="60">60°C</option>
-          <option value="90">90°C</option>
-        </select>
-        <label for="express">Express Wash</label>
-        <input type="checkbox" id="express" name="express" />
-        <button>Start</button>
-
-        <label for="washtime">Wash time</label>
-        <output id="washtime" name="washtime">...</output>
-      </form>
-    </main>
-    <script src="script.js"></script>
-  </body>
+    <body>
+        <header>
+            <h1>Environment 05</h1>
+        </header>
+        <main>
+            <h2>Runners - podium</h2>
+            <div id="podium">
+                <div id="silver">
+                    <p id="silver-name">Runner name</p>
+                    <p id="silver-time">56</p>
+                    <div class="podium">2</div>
+                </div>
+                <div id="gold">
+                    <p id="gold-name">Another name</p>
+                    <p id="gold-time">51</p>
+                    <div class="podium">1</div>
+                </div>
+                <div id="bronze">
+                    <p id="bronze-name">A name</p>
+                    <p id="bronze-time">60</p>
+                    <div class="podium">3</div>
+                </div>
+            </div>
+            <h3>Runner ups</h3>
+            <ol id="runnerups-list" start="4">
+                <!-- <li>Runner 23 - time: 56</li> -->
+            </ol>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>

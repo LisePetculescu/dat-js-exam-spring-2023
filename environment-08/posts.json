@@ -1,0 +1,27 @@
+[
+    {
+        "caption": "Beautiful sunset at the beach",
+        "likes": 5,
+        "image": "https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        "caption": "Exploring the city streets",
+        "likes": 2,
+        "image": "https://images.unsplash.com/photo-1594667447546-9a7094a69663?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        "caption": "Delicious food at the restaurant",
+        "likes": 8,
+        "image": "https://images.unsplash.com/photo-1548940740-204726a19be3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        "caption": "Hiking adventures in the mountains",
+        "likes": 7,
+        "image": "https://images.unsplash.com/photo-1682686578615-39549501dd08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        "caption": "A cozy morning with coffee",
+        "likes": 12,
+        "image": "https://images.unsplash.com/photo-1545319261-f3760f9dd64d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    }
+]
