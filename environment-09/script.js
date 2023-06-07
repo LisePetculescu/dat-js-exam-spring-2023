@@ -10,7 +10,10 @@ async function start() {
   console.log("Hello World");
 
   posts = await getPosts();
-  showPosts(posts);
+
+  //   showPosts(posts);
+  filterPublished(posts);
+  document.querySelector("#all").addEventListener("change", showAll);
 }
 
 async function getPosts() {
@@ -24,10 +27,9 @@ async function getPosts() {
 // 2. vis posts som er published
 
 function showPosts(posts) {
+  document.querySelector("#posts-list").innerHTML = "";
   for (const post of posts) {
-    if (post.published) {
-      showPosts(post);
-    }
+    showPost(post);
   }
 }
 
@@ -40,7 +42,26 @@ function showPost(post) {
     </article>
     `;
 
-    document.querySelector("#posts-list").insertAdjacentHTML("beforeend", html);
+  document.querySelector("#posts-list").insertAdjacentHTML("beforeend", html);
+}
+
+function filterPublished(posts) {
+  posts = posts.filter((post) => post.published);
+
+  showPosts(posts);
 }
 
 // 3. vis alle posts når der bliver trykket hvis alle
+
+function showAll(event) {
+  console.log(event);
+  const showAllPosts = event.target;
+//   console.log(showAllPosts.value);
+//   const checkbox = 
+
+  if (showAllPosts.checked) {
+    showPosts(posts);
+  } else {
+    filterPublished(posts);
+  }
+}
