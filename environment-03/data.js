@@ -31,4 +31,4 @@ const events = [
     }
 ];
 
-export { events }
+
