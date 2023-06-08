@@ -11,6 +11,7 @@ async function start() {
 
   posts = await getPosts();
   document.querySelector("#sortorder").addEventListener("change", sortBySelected)
+  posts.sort((low, high) => low.likes - high.likes);
   showPosts(posts);
 
   
