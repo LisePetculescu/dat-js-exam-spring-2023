@@ -26,10 +26,29 @@ async function getPosts() {
 
 // 2. vis posts som er published
 
+// function showPosts(posts) {
+//   document.querySelector("#posts-list").innerHTML = "";
+//   for (const post of posts) {
+//     showPost(post);
+//   }
+// }
+
+// function showPosts(posts) {
+//   document.querySelector("#posts-list").innerHTML = "";
+
+//   for (let i = 0; i < posts.length; i++) {
+//     const post = posts[i];
+//     showPost(post);
+//   }
+// }
+
 function showPosts(posts) {
   document.querySelector("#posts-list").innerHTML = "";
-  for (const post of posts) {
-    showPost(post);
+  let i = 0;
+  while (i < posts.length) {
+    const post = posts[i]
+    showPost(post)
+    i++
   }
 }
 
