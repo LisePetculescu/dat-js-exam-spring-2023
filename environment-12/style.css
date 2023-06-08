@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222;
+    color: lightskyblue;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 6em 1em 20em;
+    align-items: center;
+}
+
+form button {
+    grid-column: 1 / 4;
+}
+
+form label {
+    grid-column: 1 / 4;
+    margin-top: .5em;
+}
+
+form input {
+    grid-column: 1 / 4;
+}
+
+
+form #postnr-label,
+form #postnr {
+    grid-column: 1 / 2;
+}
+
+form #by-label {
+    grid-area: 5 / 3;
+}
+
+form #by {
+    grid-area: 6 / 3;
+}
+
+form input[type=checkbox] {
+    justify-self: left;
+}
+
+button,
+input {
+    padding: 0.5em;
+}

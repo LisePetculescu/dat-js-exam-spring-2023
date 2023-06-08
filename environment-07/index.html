@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Environment 07</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="../dat-js-logo.png" type="image/png" />
     </head>
 
     <body>
@@ -13,14 +14,39 @@
             <h1>Environment 07</h1>
         </header>
         <main>
-            <h2>Posts</h2>
-            <section id="posts-list">
-                <!-- <article>
-                    <img src="post.image" alt="post.caption" />
-                    <h2>post.caption</h2>
-                    <p>Likes: post.likes</p>
-                </article> -->
-            </section>
+            <h2>Create Room</h2>
+            <form id="create-room-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name of room" />
+                <label for="width">Width</label>
+                <input type="number" id="width" name="width" placeholder="Width of room (1-100)" />
+                <label for="length">Length</label>
+                <input type="number" id="length" name="length" placeholder="Length of room (1-100)" />
+
+                <button>Create Room</button>
+            </form>
+
+            <h2>Rooms</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>width</th>
+                        <th>length</th>
+                        <th>area</th>
+                    </tr>
+                </thead>
+                <tbody id="rooms-table">
+                    <!-- 
+                    <tr>
+                      <td>room.name</td>
+                      <td>room.width</td>
+                      <td>room.length</td>
+                      <td>room.calculated area</td>
+                    <tr>
+                  -->
+                </tbody>
+            </table>
         </main>
         <script src="script.js"></script>
     </body>

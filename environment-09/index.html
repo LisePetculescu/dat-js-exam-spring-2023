@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Environment 09</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="../dat-js-logo.png" type="image/png" />
     </head>
 
     <body>
@@ -14,9 +15,12 @@
         </header>
         <main>
             <h2>Posts</h2>
-            <form id="filter-form">
-                <label for="all">Show all posts </label>
-                <input type="checkbox" name="all" id="all" />
+            <form id="sort-form">
+                <label for="sortorder">Sort by number of likes: </label>
+                <select name="sortorder" id="sortorder">
+                    <option value="ascending">low to high</option>
+                    <option value="descending">high to low</option>
+                </select>
             </form>
             <section id="posts-list">
                 <!-- <article>

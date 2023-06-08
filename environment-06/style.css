@@ -4,23 +4,34 @@ body {
     color: lightskyblue;
 }
 
-form {
+#podium {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em 0em;
-    max-width: 16em;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    align-items: end;
+    text-align: center;
+}
+#podium p {
+    margin: 0;
+    color: #eee;
+}
+
+.podium {
+    border: 3px solid lightskyblue;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    font-size: 150%;
+    background-color: #888;
+}
+#silver .podium {
+    height: 5vw;
 }
 
-form button {
-    grid-column: 1 / 3;
+#gold .podium {
+    height: 8vw;
 }
-
-form input[type=checkbox] {
-    justify-self: left;
-}
-
-button,
-input {
-    padding: 0.5em;
+#bronze .podium {
+    height: 3vw;
 }

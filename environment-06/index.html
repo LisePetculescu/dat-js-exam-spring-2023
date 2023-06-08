@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Environment 06</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Environment 06</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="../dat-js-logo.png" type="image/png" />
+    </head>
 
-  <body>
-    <header>
-      <h1>Environment 06</h1>
-    </header>
-    <main>
-      <h2>Create Room</h2>
-      <form id="create-room-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Name of room" />
-        <label for="width">Width</label>
-        <input type="number" id="width" name="width" placeholder="Width of room (1-100)" />
-        <label for="length">Length</label>
-        <input type="number" id="length" name="length" placeholder="Length of room (1-100)" />
-
-        <button>Create Room</button>
-      </form>
-
-      <h2>Rooms</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>name</th>
-            <th>width</th>
-            <th>length</th>
-            <th>area</th>
-          </tr>
-        </thead>
-        <tbody id="rooms-table">
-          <!-- 
-          <tr>
-            <td>room.name</td>
-            <td>room.width</td>
-            <td>room.length</td>
-            <td>room.calculated area</td>
-          <tr>
-        --></tbody>
-      </table>
-    </main>
-    <script src="script.js"></script>
-  </body>
+    <body>
+        <header>
+            <h1>Environment 06</h1>
+        </header>
+        <main>
+            <h2>Runners - podium</h2>
+            <div id="podium">
+                <div id="silver">
+                    <p id="silver-name">Runner name</p>
+                    <p id="silver-time">56</p>
+                    <div class="podium">2</div>
+                </div>
+                <div id="gold">
+                    <p id="gold-name">Another name</p>
+                    <p id="gold-time">51</p>
+                    <div class="podium">1</div>
+                </div>
+                <div id="bronze">
+                    <p id="bronze-name">A name</p>
+                    <p id="bronze-time">60</p>
+                    <div class="podium">3</div>
+                </div>
+            </div>
+            <h3>Runner ups</h3>
+            <ol id="runnerups-list" start="4">
+                <!-- <li>Runner 23 - time: 56</li> -->
+            </ol>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
