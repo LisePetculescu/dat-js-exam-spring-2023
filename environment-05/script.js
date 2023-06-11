@@ -37,7 +37,6 @@ function sortByTime() {
 
 //  3. vis de tre hurtigste på podiet og resten i runner ups
 
-
 function showRunners() {
   document.querySelector("#podium").innerHTML = "";
   document.querySelector("#runnerups-list").innerHTML = "";
@@ -55,18 +54,47 @@ function showRunners() {
 }
 
 function showRunnerPodium(runner, position) {
-  const html = /* html */ `
-    <div class="podium-runner">
-      <div class="position">${position}</div>
-      <div class="runner-info">
-        <p class="runner-name">${runner.name}</p>
-        <p class="runner-time">${runner.time}</p>
-      </div>
-    </div>
-  `;
-  document.querySelector("#podium").insertAdjacentHTML("beforeend", html);
+  if (position === 2) {
+    const silver = /* html */ `
+         <div id="silver">
+                    <p id="silver-name">${runner.name}</p>
+                    <p id="silver-time">${runner.time}</p>
+                    <div class="podium">2</div>
+                </div>
+        `;
+    document.querySelector("#podium").insertAdjacentHTML("beforeend", silver);
+  }
+  if (position === 1) {
+    const gold = /* html */ `
+         <div id="gold">
+                    <p id="gold-name">${runner.name}</p>
+                    <p id="gold-time">${runner.time}</p>
+                    <div class="podium">1</div>
+                </div>
+        `;
+    document.querySelector("#podium").insertAdjacentHTML("beforeend", gold);
+  }
+  if (position === 3) {
+    const bronze = /* html */ `
+         <div id="bronze">
+                    <p id="bronze-name">${runner.name}</p>
+                    <p id="bronze-time">${runner.time}</p>
+                    <div class="podium">3</div>
+                </div>
+        `;
+    document.querySelector("#podium").insertAdjacentHTML("beforeend", bronze);
+  }
+  //   const html = /* html */ `
+  //     <div class="podium-runner">
+  //       <div class="position">${position}</div>
+  //       <div class="runner-info">
+  //         <p class="runner-name">${runner.name}</p>
+  //         <p class="runner-time">${runner.time}</p>
+  //       </div>
+  //     </div>
+  //   `;
+  //   document.querySelector("#podium").insertAdjacentHTML("beforeend", html);
 }
-
 
 function showRunnerRunnerUps(runner) {
   console.log(runner);
