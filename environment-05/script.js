@@ -44,6 +44,7 @@ function showRunners() {
   for (let i = 0; i < runnerList.length; i++) {
     const runner = runnerList[i];
     console.log(runner);
+   
 
     if (i < 3) {
       showRunnerPodium(runner, i + 1);
@@ -54,11 +55,14 @@ function showRunners() {
 }
 
 function showRunnerPodium(runner, position) {
+  // console.log("**********************************", runner.time);
+   const runnerTimeSplit = runner.time.toString();
+   const runnerTime = runnerTimeSplit.substring(0, 4);
   if (position === 2) {
     const silver = /* html */ `
          <div id="silver">
                     <p id="silver-name">${runner.name}</p>
-                    <p id="silver-time">${runner.time}</p>
+                    <p id="silver-time">${runnerTime}</p>
                     <div class="podium">2</div>
                 </div>
         `;
@@ -68,7 +72,7 @@ function showRunnerPodium(runner, position) {
     const gold = /* html */ `
          <div id="gold">
                     <p id="gold-name">${runner.name}</p>
-                    <p id="gold-time">${runner.time}</p>
+                    <p id="gold-time">${runnerTime}</p>
                     <div class="podium">1</div>
                 </div>
         `;
@@ -78,29 +82,21 @@ function showRunnerPodium(runner, position) {
     const bronze = /* html */ `
          <div id="bronze">
                     <p id="bronze-name">${runner.name}</p>
-                    <p id="bronze-time">${runner.time}</p>
+                    <p id="bronze-time">${runnerTime}</p>
                     <div class="podium">3</div>
                 </div>
         `;
     document.querySelector("#podium").insertAdjacentHTML("beforeend", bronze);
   }
-  //   const html = /* html */ `
-  //     <div class="podium-runner">
-  //       <div class="position">${position}</div>
-  //       <div class="runner-info">
-  //         <p class="runner-name">${runner.name}</p>
-  //         <p class="runner-time">${runner.time}</p>
-  //       </div>
-  //     </div>
-  //   `;
-  //   document.querySelector("#podium").insertAdjacentHTML("beforeend", html);
 }
 
 function showRunnerRunnerUps(runner) {
+  const runnerTimeSplit = runner.time.toString();
+  const runnerTime = runnerTimeSplit.substring(0, 4);
   console.log(runner);
 
   const html = /* html */ `
-    <li>${runner.name} - time: ${runner.time}</li>
+    <li>${runner.name} - time: ${runnerTime}</li>
     `;
 
   document.querySelector("#runnerups-list").insertAdjacentHTML("beforeend", html);
