@@ -32,6 +32,7 @@ function loopRunners() {
   document.querySelector("#bronze").innerHTML = "";
   document.querySelector("#runnerups-list").innerHTML = "";
   runnerList.sort((runnerA, runnerB) => runnerA.time - runnerB.time);
+  // filterByAva();
 
   for (let i = 0; i < runnerList.length; i++) {
     const runner = runnerList[i];
@@ -70,3 +71,10 @@ function loopRunners() {
 
 // 3. Vis de næste 7 hurtigste runners efter 3. pladsen i runner-ups listen på
 // hjemmesiden med deres resultater (2 decimaltal igen)
+
+
+// 4. filtrer så kun folk med navne der er 'Ava White' 
+
+function filterByAva() {
+  runnerList = runnerList.filter(runner => runner.name === "Ava White")
+}
