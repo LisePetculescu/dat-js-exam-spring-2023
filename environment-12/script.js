@@ -48,8 +48,9 @@ function saveInput(event) {
 
 // 3. få formen til at udfylde by automatisk på baggrund af postnummeret
 
-function autofillBy(event) {
 
+// IN START() --> document.querySelector("#postnr").addEventListener("keyup", autofillBy);
+function autofillBy(event) {
     const postnrInput = event.target.value;
     // console.log(postnummer); 
 
